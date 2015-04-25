@@ -1,8 +1,8 @@
-.chart {
+/*!
+ * graphkit - graphkit.css
+ * MIT LICENSE (c) 2015
+ * https://github.com/codenameyau/graphkit
+ */
+.graph text {
   font: 10px sans-serif;
-  background: steelblue;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
 }

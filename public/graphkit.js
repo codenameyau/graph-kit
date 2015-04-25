@@ -1,23 +1,47 @@
 /*!
- * graphkit.js
+ * graphkit - graphkit.js
  * MIT LICENSE (c) 2015
  * https://github.com/codenameyau/graphkit
  */
 'use strict';
 
-var graphkit = graphkit || {};
+/***************************************************************
+* GRAPHKIT LIBRARY
+***************************************************************/
+var graphkit = graphkit || {
+  graph: d3.select('.graph'),
+  domain: [0, 10],
+  range:  [0, 10],
+};
 
-var data = [4, 8, 15, 16, 23, 42, 74];
+graphkit.scale = function(value) {
+  return d3.scale.linear()
+    .domain(this.domain)
+    .range(this.range)(value);
+};
 
-var x = d3.scale.linear()
-        .domain([0, d3.max(data)])
-        .range([0, 420]);
+graphkit.setDomain = function(min, max) {
+  this.domain[0] = min;
+  this.domain[1] = max;
+};
 
-var graph = d3.select('.graph');
+graphkit.setRange = function(min, max) {
+  this.range[0] = min;
+  this.range[1] = max;
+};
+
+
+/***************************************************************
+* WORK IN PROGRESS
+***************************************************************/
+var graph = graphkit.graph;
+var sample = [4, 8, 15, 16, 23, 42];
+graphkit.setDomain(0, d3.max(sample));
+graphkit.setRange(0, 420);
 
 graph.selectAll('div')
-    .data(data)
+    .data(sample)
   .enter().append('div')
     .style('background', function() {return 'blue'; })
-    .style('width', function(d) {return x(d) + 'px';})
+    .style('width', function(d) {return graphkit.scale(d) + 'px';})
     .text(function(d) { return d; });
