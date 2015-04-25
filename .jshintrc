@@ -18,5 +18,7 @@
     "trailing": true,
     "smarttabs": true,
     "jquery": false,
-    "mocha": false
+    "globals": {
+        "d3": true
+    }
 }

@@ -1,5 +1,5 @@
 /*!
- * graph-kit - gulpfile.js
+ * graphkit - gulpfile.js
  * MIT License (c) 2015
  */
 'use strict';
@@ -18,7 +18,7 @@ gulp.task('clean', function(cb) {
 
 // [Task] uglify js
 gulp.task('uglify', function() {
-  return gulp.src('public/graph-kit.js')
+  return gulp.src('public/graphkit.js')
     .pipe(strReplace(/'use strict';/g, ''))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))

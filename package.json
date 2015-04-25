@@ -1,14 +1,14 @@
 {
-  "name": "graph-kit",
+  "name": "graphkit",
   "version": "1.0.0",
   "description": "D3 graphing library toolkit",
-  "main": "build/graph-kit.min.js",
+  "main": "build/graphkit.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codenameyau/graph-kit.git"
+    "url": "https://github.com/codenameyau/graphkit.git"
   },
   "keywords": [
     "D3",
@@ -19,9 +19,9 @@
   "author": "Jorge Yau <jyau01@citymail.cuny.edu>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codenameyau/graph-kit/issues"
+    "url": "https://github.com/codenameyau/graphkit/issues"
   },
-  "homepage": "https://github.com/codenameyau/graph-kit",
+  "homepage": "https://github.com/codenameyau/graphkit",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-rename": "^1.2.2",

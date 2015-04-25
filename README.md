@@ -1,1 +1,1 @@
-# web-graph-kit
+# Graph Kit

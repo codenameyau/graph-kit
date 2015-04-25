@@ -1,12 +1,12 @@
 {
-  "name": "graph-kit",
+  "name": "graphkit",
   "version": "1.0.0",
-  "homepage": "https://github.com/codenameyau/graph-kit",
+  "homepage": "https://github.com/codenameyau/graphkit",
   "authors": [
     "Jorge Yau <jyau01@citymail.cuny.edu>"
   ],
   "description": "D3 graphing library toolkit",
-  "main": "build/graph-kit.min.js",
+  "main": "build/graphkit.min.js",
   "keywords": [
     "D3",
     "graphing",
