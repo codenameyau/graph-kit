@@ -2,7 +2,7 @@
   "name": "graph-kit",
   "version": "1.0.0",
   "description": "D3 graphing library toolkit",
-  "main": "src/graph-kit.js",
+  "main": "build/graph-kit.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

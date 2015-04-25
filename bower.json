@@ -1,0 +1,32 @@
+{
+  "name": "graph-kit",
+  "version": "1.0.0",
+  "homepage": "https://github.com/codenameyau/graph-kit",
+  "authors": [
+    "Jorge Yau <jyau01@citymail.cuny.edu>"
+  ],
+  "description": "D3 graphing library toolkit",
+  "main": "build/graph-kit.min.js",
+  "keywords": [
+    "D3",
+    "graphing",
+    "library",
+    "math",
+    "d3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "public",
+    "*.md",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "d3": "~3.5.5"
+  }
+}
