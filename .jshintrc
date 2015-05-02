@@ -19,6 +19,7 @@
     "smarttabs": true,
     "jquery": false,
     "globals": {
-        "d3": true
+        "d3": true,
+        "graphkit": true
     }
 }

@@ -3,6 +3,14 @@
  * MIT LICENSE (c) 2015
  * https://github.com/codenameyau/graphkit
  */
+
+/* The following are SVG styling */
+.graph rect {
+  fill: steelblue;
+}
+
 .graph text {
+  fill: white;
   font: 10px sans-serif;
+  text-anchor: end;
 }

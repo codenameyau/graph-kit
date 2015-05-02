@@ -29,19 +29,3 @@ graphkit.setRange = function(min, max) {
   this.range[0] = min;
   this.range[1] = max;
 };
-
-
-/***************************************************************
-* WORK IN PROGRESS
-***************************************************************/
-var graph = graphkit.graph;
-var sample = [4, 8, 15, 16, 23, 42];
-graphkit.setDomain(0, d3.max(sample));
-graphkit.setRange(0, 420);
-
-graph.selectAll('div')
-    .data(sample)
-  .enter().append('div')
-    .style('background', function() {return 'blue'; })
-    .style('width', function(d) {return graphkit.scale(d) + 'px';})
-    .text(function(d) { return d; });
