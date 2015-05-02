@@ -20,6 +20,14 @@ graphkit.scale = function(value) {
     .range(this.range)(value);
 };
 
+graphkit.setWidth = function(value) {
+  this.graph.attr('width', value);
+};
+
+graphkit.setHeight = function(value) {
+  this.graph.attr('height', value);
+};
+
 graphkit.setDomain = function(min, max) {
   this.domain[0] = min;
   this.domain[1] = max;

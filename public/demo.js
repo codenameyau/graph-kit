@@ -13,11 +13,11 @@ var sample = [4, 8, 15, 16, 23, 42];
 var width  = 420;
 var barHeight = 20;
 
+// Set graph properties
+graphkit.setWidth(width);
+graphkit.setHeight(barHeight * sample.length);
 graphkit.setDomain(0, d3.max(sample));
 graphkit.setRange(0, width);
-
-graph.attr('width', width);
-graph.attr('height', barHeight * sample.length);
 
 // Pattern: selectAll -> data -> enter -> append
 var bars = graph.selectAll('g')
@@ -27,6 +27,5 @@ var bars = graph.selectAll('g')
   });
 
 bars.append('rect')
-  .attr('width', graphkit.scale)
+  .attr('width', barHeight)
   .attr('height', barHeight - 1);
-
